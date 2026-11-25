@@ -3,7 +3,7 @@
   'use strict';
 
   // ---- Settings: change the contact address here -------------------------
-  var CONTACT_EMAIL = 'hello@pqlens.com';
+  var CONTACT_EMAIL = 'sakzad.amin@gmail.com';
   // ------------------------------------------------------------------------
 
   document.documentElement.classList.add('js');
