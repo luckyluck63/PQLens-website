@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PQLens | Post-quantum readiness and crypto-agility</title>
+  <meta name="description" content="PQLens finds the cryptography hidden across your network, operating systems, code and hardware, ranks what matters, and guides your move to post-quantum standards. Built by the team behind research underpinning NIST’s PQC standards.">
+  <meta name="theme-color" content="#0E1430">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PQLens | Post-quantum readiness and crypto-agility">
+  <meta property="og:description" content="From hidden cryptography to a crypto-agile future. Discovery, prioritisation and transition to post-quantum cryptography, explained for every stakeholder.">
+  <meta property="og:image" content="assets/img/brand/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/PQLens-mark-dark.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/brand/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="PQLens home">
+        <img src="assets/img/brand/PQLens-logo-dark.svg" alt="PQLens" width="150" height="36">
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span><span class="visually-hidden">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#why-now">Why now</a></li>
+          <li><a href="#platform">Platform</a></li>
+          <li><a href="#outputs">Outputs</a></li>
+          <li><a href="#validation">Validation</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm" href="#contact">Talk to us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero section-dark">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Post-quantum cryptography platform</p>
+          <h1>From hidden cryptography to a <span class="accent">crypto-agile</span> future.</h1>
+          <p class="lead">PQLens finds the cryptography buried across your network, operating systems, code and hardware, ranks what matters, and guides your move to post-quantum standards. Every finding is explained for the board, GRC and engineers alike.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Book a discovery conversation</a>
+            <a class="btn btn-ghost" href="#platform">See how it works</a>
+          </div>
+          <p class="hero-note">Built by the Monash University team whose research underpins NIST’s post-quantum standards FIPS 203, 204 and 206.</p>
+        </div>
+        <figure class="hero-visual">
+          <div class="lamp-stage">
+            <canvas id="lamps" aria-hidden="true"></canvas>
+            <div class="lamp-caption">
+              <span class="lamp-step" id="lamp-step">Resilience</span>
+              <span class="lamp-text" id="lamp-text">Every lamp is a stream of digital payments protected by cryptography.</span>
+            </div>
+          </div>
+          <figcaption class="visually-hidden">Animation: a grid of lamps stands for digital transactions. PQLens finds and replaces degraded lamps, removes harvest-now-decrypt-later risk, and relights a cluster switched off on Q-day.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CREDIBILITY STRIP -->
+    <section class="strip" aria-label="Track record">
+      <div class="container strip-grid">
+        <div class="stat"><span class="stat-num">25+</span><span class="stat-label">years of cryptographic research</span></div>
+        <div class="stat"><span class="stat-num">FIPS 203 · 204 · 206</span><span class="stat-label">NIST standards our research underpins</span></div>
+        <div class="stat"><span class="stat-num">30M+</span><span class="stat-label">reported downloads of our PQC code via Bouncy Castle</span></div>
+        <div class="stat"><span class="stat-num">20</span><span class="stat-label">Indo-Pacific nations in our PQC capacity-building program</span></div>
+      </div>
+    </section>
+
+    <!-- WHY NOW -->
+    <section class="section section-light" id="why-now">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The threat</p>
+          <h2>Quantum computers will break today’s public-key cryptography. AI-assisted attacks are not waiting.</h2>
+        </div>
+        <div class="threat-grid">
+          <div class="threat-cards">
+            <article class="card stat-card reveal">
+              <span class="big">≈ 10.5 bn</span>
+              <p>payments made worldwide every day. About 6 billion of them are digital, and every one relies on cryptography.</p>
+              <span class="source">Capgemini World Payments Report 2026</span>
+            </article>
+            <article class="card stat-card reveal">
+              <span class="big">Now</span>
+              <p><b>Harvest now, decrypt later.</b> Encrypted traffic and backups copied today can be read once a quantum computer exists. Signatures trusted today can be forged later.</p>
+            </article>
+            <article class="card stat-card reveal">
+              <span class="big">2030</span>
+              <p>The Australian Signals Directorate expects classical public-key cryptography to be gone. NIST deprecates RSA and ECC the same year.</p>
+              <span class="source">ASD guidance; NIST IR 8547</span>
+            </article>
+          </div>
+          <figure class="threat-figure reveal">
+            <img src="assets/img/illustrations/quantum-threat.webp" alt="A padlock labelled RSA and ECDSA, guarding customer data, payments, communications and critical services, cracks under a beam from a quantum computer." width="1100" height="563" loading="lazy">
+          </figure>
+        </div>
+        <aside class="mosca reveal">
+          <p class="mosca-title">Mosca’s rule</p>
+          <p class="mosca-eq"><span>years data must stay secret</span> <b>+</b> <span>years migration takes</span> <b>&gt;</b> <span>years until a quantum computer</span></p>
+          <p>If that holds, your data is already exposed. Member records, health data and signing keys must stay secret for decades, and an enterprise migration takes five years or more.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section section-dark" id="timeline">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Deadlines are set</p>
+          <h2>Regulators have put the dates on the calendar. Readiness is lagging.</h2>
+        </div>
+        <ol class="timeline">
+          <li class="reveal"><span class="t-year">2025</span><span class="t-who">PCI DSS 4.0</span><p>Annual cryptographic inventory (requirement 12.3.3) is already mandatory.</p></li>
+          <li class="reveal"><span class="t-year">End-2026</span><span class="t-who">ASD (Australia)</span><p>Plan and inventory in place.</p></li>
+          <li class="reveal"><span class="t-year">2028</span><span class="t-who">ASD · UK NCSC</span><p>Migration begins; discovery and planning done.</p></li>
+          <li class="reveal t-key"><span class="t-year">2030</span><span class="t-who">ASD · NIST · G7</span><p>Classical public-key crypto gone in Australia; RSA and ECC deprecated in the US; critical finance systems migrating.</p></li>
+          <li class="reveal"><span class="t-year">2035</span><span class="t-who">NIST · G7 · EU</span><p>Quantum-vulnerable cryptography disallowed everywhere.</p></li>
+        </ol>
+        <p class="footnote">Also in scope: APRA CPS 234 and CPS 230 board accountability, EU DORA, Canada OSFI B-13, MAS TRM guidelines and HKMA expectations.</p>
+      </div>
+    </section>
+
+    <!-- CHALLENGES -->
+    <section class="section section-light" id="challenges">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Why it is hard</p>
+          <h2>Why can’t an organisation just patch its systems?</h2>
+        </div>
+        <div class="grid-4">
+          <article class="card challenge reveal">
+            <span class="num">1</span>
+            <h3>Hidden in every layer</h3>
+            <p>RSA and ECC sit in network protocols, operating-system libraries, application code, hardware and third parties. Most tools see one surface.</p>
+            <p class="need"><span>So you need</span> discovery across every layer</p>
+          </article>
+          <article class="card challenge reveal">
+            <span class="num">2</span>
+            <h3>Invisible to the board</h3>
+            <p>Findings are technical. Boards, GRC and executives need risk, cost and compliance in their own words.</p>
+            <p class="need"><span>So you need</span> explainability for every stakeholder</p>
+          </article>
+          <article class="card challenge reveal">
+            <span class="num">3</span>
+            <h3>A moving target</h3>
+            <p>Hybrid modes are evolving, and HQC and FN-DSA are still being standardised, while AI-assisted attacks keep improving. A one-off swap won’t last.</p>
+            <p class="need"><span>So you need</span> crypto-agility, not a one-off project</p>
+          </article>
+          <article class="card challenge reveal">
+            <span class="num">4</span>
+            <h3>Sovereignty</h3>
+            <p>Discovery needs deep access to critical systems, and regulated organisations distrust foreign agents running inside them.</p>
+            <p class="need"><span>So you need</span> fully on-premises deployment</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLATFORM -->
+    <section class="section section-dark" id="platform">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Visibility · Clarity · Control · Resilience</p>
+          <h2>One connected platform, from hidden crypto to actionable transition.</h2>
+          <p class="section-sub">Built for decision-makers, risk teams and engineers.</p>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <img src="assets/img/illustrations/discover.webp" alt="A magnifying lens over a customer database, flagging RSA-2048 and ECDSA as not quantum-safe and ML-KEM as quantum-safe." width="900" height="455" loading="lazy">
+            <div class="step-body">
+              <span class="step-num">01</span><span class="badge badge-ok">Validated in pilots</span>
+              <h3>Discover</h3>
+              <p class="step-tag">See your exposure.</p>
+              <p>Passive and active discovery across network traffic, operating systems, software and code, and hardware, producing a standardised cryptographic bill of materials (CBOM).</p>
+            </div>
+          </article>
+          <article class="step reveal">
+            <img src="assets/img/illustrations/assess.webp" alt="Four services ranked by risk, from a high-risk payment service to a low-risk reporting tool, each with an action: upgrade, validate, replace or monitor." width="900" height="563" loading="lazy">
+            <div class="step-body">
+              <span class="step-num">02</span><span class="badge badge-ok">Validated in pilots</span>
+              <h3>Assess &amp; prioritise</h3>
+              <p class="step-tag">Know what matters.</p>
+              <p>Transparent, evidence-linked risk logic: data lifetime, criticality, dependency and feasibility, so the riskiest systems move first.</p>
+            </div>
+          </article>
+          <article class="step reveal">
+            <img src="assets/img/illustrations/plan.webp" alt="A now, next, later roadmap moving a payment service, customer portal and data platform to ML-KEM and ML-DSA through test, deploy and validate." width="900" height="465" loading="lazy">
+            <div class="step-body">
+              <span class="step-num">03</span><span class="badge badge-next">Validating with partners</span>
+              <h3>Plan &amp; transition</h3>
+              <p class="step-tag">Know your next move.</p>
+              <p>A phased migration roadmap (0–6, 6–18 and 18+ months) and technical support to move prioritised systems to NIST PQC standards and hybrid modes.</p>
+            </div>
+          </article>
+          <article class="step reveal">
+            <img src="assets/img/illustrations/assure.webp" alt="A continuous cycle around connected systems: monitor, reassess, respond and validate." width="700" height="685" loading="lazy">
+            <div class="step-body">
+              <span class="step-num">04</span><span class="badge badge-next">Validating with partners</span>
+              <h3>Assure &amp; adapt</h3>
+              <p class="step-tag">Continuously adapt.</p>
+              <p>Quality-assured transition and continuous monitoring. New standards such as FN-DSA, HQC and hybrids roll out as policy, not projects.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="matrix reveal">
+          <div class="matrix-col">
+            <h3>Four layers</h3>
+            <ul class="chips">
+              <li>Network traffic</li><li>Operating systems</li><li>Software &amp; code</li><li>Hardware</li>
+            </ul>
+          </div>
+          <div class="matrix-core">
+            <img src="assets/img/brand/PQLens-mark-dark.svg" alt="" width="72" height="72">
+            <p>One AI-native engine.<br>One evidence base.</p>
+          </div>
+          <div class="matrix-col">
+            <h3>Four audiences</h3>
+            <dl class="audiences">
+              <div><dt>Board</dt><dd>Posture against ASD 2030 and APRA expectations</dd></div>
+              <div><dt>CISO · CTO · CEO</dt><dd>Prioritised roadmap and budget</dd></div>
+              <div><dt>GRC</dt><dd>CPS 234 and CPS 230 evidence</dd></div>
+              <div><dt>Technical teams</dt><dd>CBOM, findings and fix tickets</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTPUTS -->
+    <section class="section section-light" id="outputs">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">What you receive</p>
+          <h2>Six outputs, from live traffic to a board-ready migration roadmap.</h2>
+        </div>
+        <div class="outputs" data-tabs>
+          <div class="tab-list" role="tablist" aria-label="PQLens outputs">
+            <button role="tab" aria-selected="true" aria-controls="out-1" id="tab-1"><span>1</span> Network topology</button>
+            <button role="tab" aria-selected="false" aria-controls="out-2" id="tab-2" tabindex="-1"><span>2</span> Cryptographic inventory</button>
+            <button role="tab" aria-selected="false" aria-controls="out-3" id="tab-3" tabindex="-1"><span>3</span> Asset risk &amp; AI analysis</button>
+            <button role="tab" aria-selected="false" aria-controls="out-4" id="tab-4" tabindex="-1"><span>4</span> Context map</button>
+            <button role="tab" aria-selected="false" aria-controls="out-5" id="tab-5" tabindex="-1"><span>5</span> Business-impact assessment</button>
+            <button role="tab" aria-selected="false" aria-controls="out-6" id="tab-6" tabindex="-1"><span>6</span> Prioritised roadmap</button>
+          </div>
+          <div class="tab-panels">
+            <div role="tabpanel" id="out-1" aria-labelledby="tab-1">
+              <img src="assets/img/product/topology.webp" alt="PQLens network topology view mapping discovered systems and their communication." width="1100" height="524" loading="lazy">
+              <p>Systems and how they communicate, observed from live traffic.</p>
+            </div>
+            <div role="tabpanel" id="out-2" aria-labelledby="tab-2" hidden>
+              <img src="assets/img/product/inventory.webp" alt="PQLens technical inventory listing crypto assets with PQC status and technical risk." width="1100" height="524" loading="lazy">
+              <p>A standardised CBOM: every algorithm, key and cipher suite found, with PQC status and risk.</p>
+            </div>
+            <div role="tabpanel" id="out-3" aria-labelledby="tab-3" hidden>
+              <img src="assets/img/product/asset-risk.webp" alt="PQLens cryptographic asset view for an RSA-2048 key with a risk score and exposure." width="1100" height="524" loading="lazy">
+              <p>Risk score, exposure and business context for each asset.</p>
+            </div>
+            <div role="tabpanel" id="out-4" aria-labelledby="tab-4" hidden>
+              <img src="assets/img/product/context-map.webp" alt="PQLens context map linking crypto assets to technical nodes and services." width="1100" height="523" loading="lazy">
+              <p>From asset to system, service and organisation.</p>
+            </div>
+            <div role="tabpanel" id="out-5" aria-labelledby="tab-5" hidden>
+              <img src="assets/img/product/impact-assessment.webp" alt="PQLens business-impact assessment asking how critical and how sensitive a service is." width="1100" height="524" loading="lazy">
+              <p>Criticality, data sensitivity and data lifetime, captured with the people who own the service.</p>
+            </div>
+            <div role="tabpanel" id="out-6" aria-labelledby="tab-6" hidden>
+              <img src="assets/img/product/roadmap.webp" alt="PQLens migration roadmap grouping work packages into immediate, planned and monitor phases." width="1100" height="524" loading="lazy">
+              <p>A phased migration roadmap: 0–6, 6–18 and 18+ months.</p>
+            </div>
+          </div>
+        </div>
+        <p class="footnote">Screens from the PQLens v3.2 demo on a remote-patient-monitoring testbed.</p>
+      </div>
+    </section>
+
+    <!-- WHY PQLENS -->
+    <section class="section section-dark" id="why-pqlens">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Why PQLens</p>
+          <h2>Four distinguishers. Together, they make crypto-agility practical.</h2>
+        </div>
+        <div class="grid-4">
+          <article class="card card-dark diff reveal">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/></svg>
+            <h3>Holistic discovery</h3>
+            <p>Network, operating systems, software and code, and hardware in one inventory, not one surface at a time.</p>
+          </article>
+          <article class="card card-dark diff reveal">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-13.7 5.7"/><path d="M4 12a8 8 0 0 1 13.7-5.7"/><path d="M18 3v4h-4"/><path d="M6 21v-4h4"/></svg>
+            <h3>Crypto-agile by design</h3>
+            <p>Our team works inside the PQC standards process, so the platform is ready for what becomes standard next.</p>
+          </article>
+          <article class="card card-dark diff reveal">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2.5 20a5.5 5.5 0 0 1 11 0"/><path d="M14 20a4 4 0 0 1 7.5-1.5"/></svg>
+            <h3>Explainable to everyone</h3>
+            <p>The same evidence, translated into views for engineers, GRC, the CISO and the board.</p>
+          </article>
+          <article class="card card-dark diff reveal">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="7" rx="1.5"/><rect x="4" y="14" width="16" height="7" rx="1.5"/><path d="M8 6.5h.01M8 17.5h.01"/></svg>
+            <h3>Sovereign &amp; local</h3>
+            <p>Deploys fully on-premises or on your chosen cloud, with evidence mapped to APRA CPS 234/230 and ASD milestones.</p>
+          </article>
+        </div>
+        <div class="callout reveal">
+          <span class="callout-num">0 of 68</span>
+          <p>PQC vendors in our 2026 market scan show all four, based on public evidence.</p>
+        </div>
+
+        <div class="resilience">
+          <div class="resilience-copy reveal">
+            <h3>Resilience, shown</h3>
+            <p>Think of every digital transaction as a lamp lit by cryptography. PQLens keeps the lights on:</p>
+            <ol>
+              <li><b>A lamp degrades</b> under an AI-assisted attack: PQLens identifies it and swaps the algorithm.</li>
+              <li><b>A risk triangle appears</b> from harvest-now, decrypt-later exposure: PQLens removes the risk and the lamp shines again.</li>
+              <li><b>Q-day switches off a whole cluster</b>: crypto-agile by design, PQLens re-keys it with post-quantum cryptography.</li>
+            </ol>
+            <a class="text-link" href="#top">Watch the animation at the top of the page</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALIDATION -->
+    <section class="section section-light" id="validation">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Early validation</p>
+          <h2>Early proof in finance. Relevance far beyond it.</h2>
+          <p class="section-sub">One engine, deployed across regulated finance, higher education and two critical-infrastructure sectors.</p>
+        </div>
+        <div class="grid-4">
+          <article class="card validation reveal">
+            <svg class="icon icon-dark" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10l9-6 9 6"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8"/><path d="M3 21h18"/></svg>
+            <span class="tag">Two pilots</span>
+            <h3>APRA-regulated finance</h3>
+            <p>All-layer discovery, a CBOM and a risk-based roadmap for the board, GRC and CISO.</p>
+          </article>
+          <article class="card validation reveal">
+            <svg class="icon icon-dark" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/></svg>
+            <span class="tag">Pilot</span>
+            <h3>Higher education</h3>
+            <p>University networks, research data and identity systems.</p>
+          </article>
+          <article class="card validation reveal">
+            <svg class="icon icon-dark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+            <span class="tag">Testbed</span>
+            <h3>Remote patient monitoring</h3>
+            <p>Devices, gateways and clinical cloud, where health data must stay secret for decades.</p>
+          </article>
+          <article class="card validation reveal">
+            <svg class="icon icon-dark" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L5 13h6l-1 9 8-11h-6z"/></svg>
+            <span class="tag">Testbed</span>
+            <h3>EV charging infrastructure</h3>
+            <p>Chargers, back-end and the certificates that link them: long-lived devices that are hard to upgrade.</p>
+          </article>
+        </div>
+
+        <div class="path reveal">
+          <h3 class="path-title">A practical path to post-quantum readiness</h3>
+          <ol class="path-steps">
+            <li><span>01</span><h4>Focused PoC</h4><p>Understand your exposure and where to begin.</p></li>
+            <li><span>02</span><h4>Critical systems</h4><p>Move prioritised systems towards PQC.</p></li>
+            <li><span>03</span><h4>Scale &amp; sustain</h4><p>Expand coverage and adapt over time.</p></li>
+          </ol>
+          <p class="path-foot">A transition you can manage. A posture you can sustain.</p>
+        </div>
+
+        <div class="sandbox reveal">
+          <img src="assets/img/illustrations/scale.webp" alt="" width="700" height="345" loading="lazy">
+          <div>
+            <p class="eyebrow">Monash PQC Sandbox</p>
+            <h3>Rebuild before you deploy</h3>
+            <p>A shared, sector-wide test bed hosted at Monash University. Members bring replicas of their critical systems, run the full cycle (discover, assess, prioritise, transition, control) and leave with a validated roadmap.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section section-dark" id="team">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Who we are</p>
+          <h2>Built by the team behind the global PQC standards.</h2>
+          <p class="section-sub">Monash research from 2009 on Polynomial-LWE underpins ML-KEM and ML-DSA (FIPS 203 and 204) and earned an IACR Asiacrypt Test of Time Award. Our team co-designed the sampler adopted in FN-DSA (FIPS 206), and our C# and Java implementations of the NIST PQC standards ship in Bouncy Castle.</p>
+        </div>
+        <h3 class="team-group">Founders</h3>
+        <div class="team-grid">
+          <article class="person reveal">
+            <img src="assets/img/team/amin-sakzad.jpg" alt="Amin Sakzad" width="480" height="480" loading="lazy">
+            <h4>A/Prof Amin Sakzad</h4>
+            <p class="role">Co-founder · CSO, Cryptography</p>
+            <p>Associate Professor at Monash University. Co-designer of the FN-DSA sampler; lattice cryptography and secure implementation.</p>
+          </article>
+          <article class="person reveal">
+            <img src="assets/img/team/bahar-abbas-pour.jpg" alt="Bahar Abbas Pour" width="480" height="480" loading="lazy">
+            <h4>Bahar Abbas Pour</h4>
+            <p class="role">Co-founder · CTO, Product</p>
+            <p>Formerly at EY; PhD candidate at Monash. Distributed, cloud-edge and AI-driven systems; leads the PQLens product.</p>
+          </article>
+          <article class="person reveal">
+            <img src="assets/img/team/mohammad-goudarzi.jpg" alt="Mohammad Goudarzi" width="480" height="480" loading="lazy">
+            <h4>Dr Mohammad Goudarzi</h4>
+            <p class="role">Co-founder · Head of Engineering</p>
+            <p>Lecturer at Monash University. Builds the PQLens discovery engine, its integrations and on-premises deployment.</p>
+          </article>
+        </div>
+        <h3 class="team-group">Advisors</h3>
+        <div class="team-grid team-grid-2">
+          <article class="person reveal">
+            <img src="assets/img/team/ron-steinfeld.jpg" alt="Ron Steinfeld" width="480" height="480" loading="lazy">
+            <h4>Prof Ron Steinfeld</h4>
+            <p class="role">Scientific advisor</p>
+            <p>Professor at Monash University. Cryptographic research underpinning standardised post-quantum cryptography.</p>
+          </article>
+          <article class="person reveal">
+            <img src="assets/img/team/shonali-krishnaswamy.jpg" alt="Shonali Krishnaswamy" width="480" height="480" loading="lazy">
+            <h4>Prof Shonali Krishnaswamy</h4>
+            <p class="role">Business advisor</p>
+            <p>Professor at Monash University. Commercial strategy, from AI research to deeptech enterprise.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-light" id="faq">
+      <div class="container container-narrow">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions we hear most</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Why act now, if quantum computers are still years away?</summary>
+            <p>Because data stolen today can be decrypted later, and regulators have already set dates. ASD expects a plan by end-2026, migration from 2028 and classical public-key cryptography gone by 2030. NIST deprecates RSA and ECC from 2030 and disallows them after 2035. An enterprise migration takes five years or more.</p>
+          </details>
+          <details>
+            <summary>Is anyone actually obliged to act?</summary>
+            <p>There is no PQC law yet, but boards are accountable. APRA CPS 234 requires information-security capability that keeps pace with threats, CPS 230 extends that to material service providers, and PCI DSS 4.0 already requires an annual cryptographic inventory. Abroad, the G7, UK NCSC, EU DORA, OSFI B-13 and MAS set the same direction.</p>
+          </details>
+          <details>
+            <summary>What does PQLens actually deliver?</summary>
+            <p>A network topology, a standardised cryptographic inventory (CBOM), asset-level risk analysis, a context map from asset to service, a business-impact assessment and a phased migration roadmap, with reports for the board, executives, GRC and technical teams.</p>
+          </details>
+          <details>
+            <summary>Does our data leave our premises?</summary>
+            <p>No. PQLens can deploy fully on-premises, with no foreign agents required, or on a cloud of your choice. Discovery can start passively, from observed traffic, before any active scanning.</p>
+          </details>
+          <details>
+            <summary>We already have security tools. How does PQLens fit?</summary>
+            <p>PQLens is designed to sit alongside the stack you already run, connecting to SIEM, SOAR, CMDB and ITSM tools through standard APIs so findings flow into existing workflows.</p>
+          </details>
+          <details>
+            <summary>Who should start this conversation?</summary>
+            <p>CISOs, CTOs and risk leaders in regulated organisations, especially banks, super funds, insurers, health and energy operators, and anyone holding data that must stay secret for years.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-dark cta" id="contact">
+      <div class="container cta-grid">
+        <div>
+          <p class="eyebrow">Get started</p>
+          <h2>Preparing for PQC? Come and talk to us.</h2>
+          <p class="lead">Start with a focused proof of concept on one environment and leave with a clear view of your exposure and where to begin.</p>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="field">
+            <label for="cf-name">Name</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="cf-org">Organisation</label>
+            <input id="cf-org" name="organisation" type="text" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="cf-email">Work email</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="cf-msg">How can we help?</label>
+            <textarea id="cf-msg" name="message" rows="4"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="form-note" id="form-note">This opens your email app with your message ready to send.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/brand/PQLens-logo-dark.svg" alt="PQLens" width="150" height="36">
+        <p>Solving today’s quantum challenge. Building tomorrow’s cyber resilience.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <div>
+          <h4>Platform</h4>
+          <a href="#platform">How it works</a>
+          <a href="#outputs">Outputs</a>
+          <a href="#why-pqlens">Why PQLens</a>
+        </div>
+        <div>
+          <h4>Context</h4>
+          <a href="#why-now">The threat</a>
+          <a href="#timeline">Regulatory timeline</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#validation">Validation</a>
+          <a href="#team">Team</a>
+          <a href="#contact" data-contact-link>Contact</a>
+        </div>
+      </nav>
+    </div>
+    <div class="container footer-base">
+      <p>© <span id="year">2026</span> PQLens. Built on Monash University research.</p>
+      <p>Figures are drawn from cited public sources and our own 2026 market scan; regulatory summaries are our interpretation, not legal advice.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
